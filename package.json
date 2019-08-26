@@ -1,0 +1,19 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "minecraft server discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdburkholder/Discord-Bot.git"
+  },
+  "author": "jdburkholder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdburkholder/Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/jdburkholder/Discord-Bot#readme"
+}
