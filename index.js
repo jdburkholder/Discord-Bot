@@ -4,13 +4,23 @@ const bot = new Discord.Client();
 const auth = require('./auth.json');
 const token = auth.token;
 
+const PREFIX = 'm!';
+
 bot.on('ready', () =>{
     console.log('online');
 })
 
-bot.on('message', msg =>{
-    if(msg.content === "m!help"){
-        msg.reply("Hi! I don't have any commands right now.");
+bot.on('message', message =>{
+    
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+    switch(args[0]){
+        case 'help':
+            message.reply("Hi! I don't have any commands right now.");
+        break;
+    }else{
+        message.reply("I don't understand. Do m!help for more information.")
+    }
     }
 })
 
