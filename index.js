@@ -18,9 +18,6 @@ bot.on('message', message =>{
         case 'help':
             message.reply("Hi! I don't have any commands right now.");
         break;
-    }else{
-        message.reply("I don't understand. Do m!help for more information.")
-    }
     }
 })
 
