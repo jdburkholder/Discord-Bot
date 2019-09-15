@@ -24,7 +24,8 @@ bot.on('message', async message =>{
             message.reply("Hi! I don't have any commands right now.");
         break;
         case 'status':
-            message.reply("I don't know how to tell yet.");
+            message.reply("Checking status...");
+            message.reply(status());
         break;
         case 'start':
             message.reply("Starting! (not really)");
@@ -33,5 +34,9 @@ bot.on('message', async message =>{
             message.reply("Shutting down. (not really)");
     }
 })
+
+function status(){
+    return ("unknown");
+}
 
 bot.login(token);
